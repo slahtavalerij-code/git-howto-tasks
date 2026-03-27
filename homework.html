@@ -1,0 +1,533 @@
+<!-- Перше завдання -->
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                background-color: #add8e6;
+                padding: 20px;
+                box-sizing: border-box;
+                min-height: 100vh;
+            }
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .card {
+                background: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img-placeholder {
+                background-color: #c0c0c0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #666;
+                width: 100%;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h3 {
+                margin: 0 0 10px 0;
+                font-size: 18px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <div class="card">
+                    <div class="img-placeholder" style="height: 150px">350 x 150</div>
+                    <div class="content">
+                        <h3>Some title</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis purus sed ipsum
+                            rhoncus, aliquet feugiat elit euismod.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder" style="height: 220px">350 x 220</div>
+                    <div class="content">
+                        <p>Aenean feugiat dui et libero consectetur hendrerit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder" style="height: 100px">350 x 100</div>
+                    <div class="content">
+                        <h3>Some title</h3>
+                        <p>
+                            Mauris nec purus nec ligula euismod convallis. Vivamus ac tortor vel quam viverra tristique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-placeholder" style="height: 100px">350 x 100</div>
+                    <div class="content">
+                        <p>
+                            Aliquam ornare nulla a velit vehicula, sed dignissim nunc pharetra. Fusce in dolor eu metus
+                            cursus imperdiet.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder" style="height: 230px">350 x 230</div>
+                    <div class="content">
+                        <h3>The title</h3>
+                        <p>In ultrices lorem id consectetur tempus. Mauris tristique enim in hendrerit dapibus.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder" style="height: 150px">350 x 150</div>
+                    <div class="content">
+                        <p>
+                            Nulla ut justo iaculis, faucibus tortor non, blandit tortor. Quisque id lectus et ipsum
+                            bibendum mattis vitae sagittis magna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-placeholder" style="height: 100px">350 x 100</div>
+                    <div class="content">
+                        <h3>A little longer title</h3>
+                        <p>
+                            Aenean accumsan turpis gravida feugiat molestie. Aliquam ornare nulla a velit vehicula, sed
+                            dignissim nunc pharetra.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder" style="height: 350px">350 x 350</div>
+                    <div class="content">
+                        <h3>A title</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis purus sed ipsum
+                            rhoncus, aliquet feugiat elit euismod.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder" style="height: 150px">350 x 150</div>
+                    <div class="content">
+                        <p>Vivamus ac tortor vel quam viverra tristique. Curabitur suscipit est non mattis volutpat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- Друге завдання -->
+
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container-chat">
+            <div class="message-row anie">
+                <div class="user-info">Anie Smith 4 hours ago</div>
+                <div class="avatar"></div>
+                <div class="text">Ut in enim scelerisque, pharetra velit id, maximus nunc</div>
+            </div>
+
+            <div class="message-row anie">
+                <div class="user-info">Anie Smith 4 hours ago</div>
+                <div class="avatar"></div>
+                <div class="text">Etiam lacinia velit id venenatis sodales</div>
+            </div>
+
+            <div class="message-row anie">
+                <div class="user-info">Anie Smith 3 hours ago</div>
+                <div class="avatar"></div>
+                <div class="text">Fusce quis ex fringilla, congue diam vel, sodales tortor</div>
+            </div>
+
+            <div class="message-row jack">
+                <div class="user-info">Jack Silverston 4 hours ago</div>
+                <div class="avatar"></div>
+                <div class="text">Fusce auctor nibh at consequat efficitur</div>
+            </div>
+
+            <div class="message-row jack">
+                <div class="user-info">Jack Silverston 4 hours ago</div>
+                <div class="avatar"></div>
+                <div class="text">Mauris ac mi quis ante dignissim tempus in non nulla</div>
+            </div>
+
+            <div class="message-row jack">
+                <div class="user-info">Jack Silverston 4 hours ago</div>
+                <div class="avatar"></div>
+                <div class="text">Curabitur quis dolor eget elit pulvinar sollicitudin</div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- Третє завдання -->
+
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Boards</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <header>
+                <h1>MY BOARDS</h1>
+            </header>
+
+            <div class="boards-container">
+                <div class="board">
+                    <h3>To Do</h3>
+                    <div class="tasks-list">
+                        <div class="task-card">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>In sed eros sed magna cursus molestie</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Integer at turpis sed justo feugiat vulputate</p>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="board">
+                    <h3>In Process</h3>
+                    <div class="tasks-list">
+                        <div class="task-card">
+                            <p>Quisque ut mi eget nisl lacinia cursus aliquam a neque</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Nunc in urna vitae ante sodales fringilla eget id ex</p>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="board">
+                    <h3>For Check</h3>
+                    <div class="tasks-list">
+                        <div class="task-card">
+                            <p>Sed dapibus tellus id dolor gravida, fringilla finibus ligula condimentum</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Suspendisse tempus diam ut sem interdum, quis bibendum nisi volutpat</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Integer id elit at lorem faucibus mattis vel eget ex</p>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!-- Третє завдання.Додаємо вертикальний скрол -->
+
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Boards</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <header>
+                <h1>MY BOARDS</h1>
+            </header>
+
+            <div class="boards-container">
+                <div class="board">
+                    <h3>To Do</h3>
+                    <div class="tasks-list">
+                        <div class="task-card">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>In sed eros sed magna cursus molestie</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Integer at turpis sed justo feugiat vulputate</p>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="board">
+                    <h3>In Process</h3>
+                    <div class="tasks-list">
+                        <div class="task-card">
+                            <p>Quisque ut mi eget nisl lacinia cursus aliquam a neque</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Nunc in urna vitae ante sodales fringilla eget id ex</p>
+                            <div class="card-footer"></div>
+                        <div class="task-card">
+                            <p>In auctor enim vitae arcu interdum fringilla</p>
+                            <div class="card-footer"></div>
+                        <div class="task-card">
+                            <p>Donec dapibus urna in neque imperdiet, id scelerisque felis interdum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="board">
+                    <h3>For Check</h3>
+                    <div class="tasks-list">
+                        <div class="task-card">
+                            <p>Sed dapibus tellus id dolor gravida, fringilla finibus ligula condimentum</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Suspendisse tempus diam ut sem interdum, quis bibendum nisi volutpat</p>
+                            <div class="card-footer"></div>
+                        </div>
+                        <div class="task-card">
+                            <p>Integer id elit at lorem faucibus mattis vel eget ex</p>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!-- Третє завдання.Додаємо вертикальний скрол, та нижній скрол -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Boards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header>
+            <h1>MY BOARDS</h1>
+        </header>
+
+        <div class="boards-container">
+            <div class="board">
+                <h3>To Do</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>In sed eros sed magna cursus molestie</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Integer at turpis sed justo feugiat vulputate</p>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <h3>In Progress</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Quisque ut mi eget nisl lacinia cursus aliquam a neque</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Nunc in urna vitae ante sodales fringilla eget id ex</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>In auctor enim vitae arcu interdum fringilla</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Donec dapibus urna in neque imperdiet, id scelerisque felis interdum</p>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <h3>For Check</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Sed dapibus tellus id dolor gravida, fringilla finibus ligula condimentum</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Suspendisse tempus diam ut sem interdum, quis bibendum nisi volutpat</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Integer id elit at lorem faucibus mattis vel eget ex</p>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <h3>Fix</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Nulla in purus nec diam consectetur adipiscing elit</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Nulla ac erat quis eros laoreet fringilla eget id ex</p>
+                        <div class="card-footer"></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Integer nec aliquam massa vel tellus faucibus mattis</p>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<!-- Третє завдання.Додаємо вертикальний скрол, та нижній скрол і ще одну дошку Done-->
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Boards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header>
+            <h1>MY BOARDS</h1>
+        </header>
+
+        <div class="boards-container">
+            <div class="board">
+                <h3>To Do</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="card-footer"><span>&#9776; 4/8 &#9998; 2 &#128206; 4</span></div>
+                    </div>
+                    <div class="task-card">
+                        <p>In sed eros sed magna cursus molestie</p>
+                        <div class="card-footer"><span>&#9776; 0/3 &#128206; 7</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <h3>In Progress</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Quisque ut mi eget nisl lacinia cursus aliquam a neque</p>
+                        <div class="card-footer"><span>&#9776; 1 &#128206; 1</span></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Nunc in urna vitae ante sodales fringilla eget id ex</p>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <h3>For Check</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Sed dapibus tellus id dolor gravida, fringilla finibus ligula condimentum</p>
+                        <div class="card-footer"><span>&#9776; 4/8 &#9998; 2 &#128206; 4</span></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Suspendisse tempus diam ut sem interdum, quis bibendum nisi volutpat</p>
+                        <div class="card-footer"><span>&#9776; 0/3 &#128206; 7</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <h3>Fix</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Nulla in purus nec diam consectetur adipiscing elit</p>
+                        <div class="card-footer"><span>&#9776; 1 &#128206; 1</span></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Integer nec aliquam massa vel tellus faucibus mattis</p>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <h3>Done</h3>
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <p>Nullam id diam quis dui mattis egestas</p>
+                        <div class="card-footer"><span>&#9776; 4/8 &#128206; 4</span></div>
+                    </div>
+                    <div class="task-card">
+                        <p>Maecenas pellentesque sem eget est hendrerit mollis</p>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
